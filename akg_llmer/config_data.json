@@ -1,0 +1,66 @@
+{    
+    "d1": {
+        "root_path":"src/data",
+        "dataset":"rel-heter",
+        "source":"left",
+        "target":"right",
+        "ground_truth":"gtReHe",
+        "rank_label":"src/data/hard_negs/d1_ReHe.pkl",
+        "num_neg":10,
+        "span":["phone"]
+    },
+    "d2": {
+        "root_path":"src/data",
+        "dataset":"semi-rel",
+        "source":"left",
+        "target":"right",
+        "ground_truth":"gtSeRe",
+        "rank_label":"src/data/hard_negs/d2_SeRe.pkl",
+        "num_neg":10,
+        "span":["director"]
+    },
+    "d3": {
+        "root_path":"src/data",
+        "dataset":"iTunes-Amazon",
+        "source":"tableA",
+        "target":"tableB",
+        "ground_truth":"gtItAm",
+        "rank_label":"src/data/hard_negs/d3_ItAm.pkl",
+        "num_neg":10,
+        "span":["Artist_Name"]
+    },
+    "d4": {
+        "root_path":"src/data",
+        "dataset":"Walmart-Amazon",
+        "source":"tableA",
+        "target":"tableB",
+        "ground_truth":"gtWaAm",
+        "rank_label":"src/data/hard_negs/d4_WaAm.pkl",
+        "num_neg":10,
+        "span":["brand"]
+    },
+    "d5": {
+        "root_path":"src/data",
+        "dataset":"D5_D6_D7(imdb-tmdb)",
+        "source":"imdb",
+        "target":"tvdb",
+        "ground_truth":"gtImTv",
+        "rank_label":"src/data/hard_negs/d5_ImTv.pkl",
+        "num_neg":10,
+        "span":["title"],
+        "col_l": ["title", "name", "episodeNumber", "seasonNumber", "deathYear", "birthYear", "endYear", "startYear", "genre_list", "primaryProfessions", "runtimeMinutes", "aggregate value"],
+        "col_r": ["title", "name", "abstract", "episodeNumber", "seasonNumber", "releaseDate", "job", "aggregate value"],
+        "sep":"|"
+    },
+    "d6": {
+        "root_path":"src/data",
+        "dataset":"D10(movies)",
+        "source":"imdb",
+        "target":"dbpedia",
+        "ground_truth":"gtImDb",
+        "rank_label":"src/hard_negs/d6_ImDb.pkl",
+        "num_neg":10,
+        "span":["title"],
+        "sep":"|"
+    }
+}
